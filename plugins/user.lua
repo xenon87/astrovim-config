@@ -18,5 +18,16 @@ return {
         -- Configuration here, or leave empty to use defaults
       })
     end
+  },
+  {
+    "nvim-treesitter/nvim-treesitter-context",
+    event = "BufRead",
+    lazy = false,
+    config = function()
+      require("treesitter-context").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
+    end
+
   }
 }
